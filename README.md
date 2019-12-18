@@ -10,4 +10,4 @@ A collection of tools for gathering information about AWS (often where the API d
 
 | Name | Script Documentation |
 | --- | --- |
-| [list-region-info.py](src/ssm/list-region-info/list-region-info.py) | [README](src/list-region-info/list-region-info.py/README.md) | 
+| [list-region-info.py](src/list-region-info/list-region-info.py) | [README](src/list-region-info/README.md) | 
