@@ -1,0 +1,17 @@
+matrix:
+  include:
+  - language: ruby
+    name: "Link Checking (rvm 2.6)"
+    rvm: 2.6
+    env: WHITELIST="https://github.com/TGWolf,https://github.com/AntiPhotonltd"
+    before_install:
+      - mkdir travis
+      - git clone https://github.com/TravisToolbox/awesomebot-travis.git travis/awesomebot
+    install:
+      - ./travis/awesomebot/install.sh
+    script: 
+      - ./travis/awesomebot/scan.sh
+notifications:
+  email: false
+  slack:
+    secure: CwQSAe+0qAXpoSoITXKNu1370ZSYnag4/wF1iDTUYf0aiNVfWXEdEiKZAOEoq7CjoPwI8Ote8JLfT//zzBeYKQIRRN6IbsWajhQouc8HaQ1OEdesY1HuNL/1BIUxgt4s/QaztG2BRUMnLrxl0K2suirl2PegllsT0+Q4v4DLCaDasnnFsXiaRsitFVOhnD/sDAaFPkJjzVlqCEv/D5gHtF3NxcGBgAfJsKtIXqQ1t75ol0yjky7/XqsN0r8OvQItjqGBFuJJQSuSttu7WRMX6v+uo5HKb4UyM/HWMoyzGgJJLJYv20XIJB/8MWm2/7Q+4/D1XkM0v3yw3ObZrr8JD1xLHAvizagBYfBayJm8dIFeFqSFVZIgE5syAQPgqXm1IJtkiB/Or9amTgZnU4AzKz96eFutGy/16YasWOXXBPHjZHZFFMRzbXmv9iRtYEUN0UXrZp0QB1B7vUSDeNoe/r/eVpnWYsh7Cw527otZKMw8k09RrD+2uirWUKYwRnfjl9oW3iqsDuy4zRH5jmEpIsqtS+zPEQRIulGaf/To193Z6QJS5DykLwCZ+yY+worc14mozODr/e6lX8Bwr4Ax8T5tb+8QBXZuRDOKCqvOa/rnCI9zjnausjiqjxQBd2nFtZFB8wnXZsU4tFbbRmZrkYmaOOX1/5jTJG9Je+J5wmA=
