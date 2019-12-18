@@ -1,4 +1,4 @@
-# Template Changelog
+# AWS Info Tools Changelog
 
 All notable changes to this project will be documented in this file.
 
@@ -9,11 +9,11 @@ For further info see our [changelogs](https://github.com/AntiPhotonltd/changelog
 ## [Unreleased]
 
 
-## [v1.0.0] - December 11 2019
+## [v1.0.0] - December 18 2019
 
 * Initial Release ([@TGWolf][])
 
 [@TGWolf]: https://github.com/TGWolf
 
-[unreleased]: https://github.com/AntiPhotonltd/ { repo name } /compare/v1.0.0...HEAD
-[v1.0.0]: https://github.com/AntiPhotonltd/ { repo name } /releases/tag/v1.0.0
+[unreleased]: https://github.com/AntiPhotonltd/aws-info-tools/compare/v1.0.0...HEAD
+[v1.0.0]: https://github.com/AntiPhotonltd/aws-info-tools/releases/tag/v1.0.0
