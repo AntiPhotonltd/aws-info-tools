@@ -8,6 +8,11 @@ For further info see our [changelogs](https://github.com/AntiPhotonltd/changelog
 
 ## [Unreleased]
 
+Chores:
+
+* Update the date in the License file.
+* Update the requirements.txt
+
 Documentation:
 
 * Updated the badges on the readme file. ([@TGWolf][])

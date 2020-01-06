@@ -1,115 +1,115 @@
 matrix:
   include:
   - language: bash
-    name: "Shellcheck [Bash running on Ubuntu Bionic 18.04]"
+    name: Shellcheck [Bash running on Ubuntu Bionic 18.04]
     dist: bionic
     before_install:
-      - mkdir travis
-      - git clone https://github.com/TravisToolbox/shellcheck-travis.git travis/shellcheck
+    - mkdir travis
+    - git clone https://github.com/TravisToolbox/shellcheck-travis.git travis/shellcheck
     install:
-      - ./travis/shellcheck/install.sh
+    - "./travis/shellcheck/install.sh"
     script:
-      - ./travis/shellcheck/scan.sh
+    - "./travis/shellcheck/scan.sh"
   - language: python
-    name: "Bandit, Pur & Pycodestyle [Python 3.5 running on Ubuntu Bionic 18.04]"
+    name: Bandit, Pur & Pycodestyle [Python 3.5 running on Ubuntu Bionic 18.04]
     python: 3.5
     dist: bionic
     before_install:
-      - sudo apt-get install figlet
-      - mkdir travis
-      - git clone https://github.com/TravisToolbox/bandit-travis.git travis/bandit
-      - git clone https://github.com/TravisToolbox/pur-travis.git travis/pur
-      - git clone https://github.com/TravisToolbox/pycodestyle-travis.git travis/pycodetyle
-      - pip install --upgrade setuptools
+    - sudo apt-get install figlet
+    - mkdir travis
+    - git clone https://github.com/TravisToolbox/bandit-travis.git travis/bandit
+    - git clone https://github.com/TravisToolbox/pur-travis.git travis/pur
+    - git clone https://github.com/TravisToolbox/pycodestyle-travis.git travis/pycodetyle
+    - pip install --upgrade setuptools
     install:
-      - ./travis/bandit/install.sh
-      - ./travis/pur/install.sh
-      - ./travis/pycodetyle/install.sh
+    - "./travis/bandit/install.sh"
+    - "./travis/pur/install.sh"
+    - "./travis/pycodetyle/install.sh"
     script:
-      - figlet -c -w 125 -f big Bandit Tests
-      - ./travis/bandit/scan.sh
-      - figlet -c -w 125 -f big Pur Tests
-      - ./travis/pur/scan.sh
-      - figlet -c -w 125 -f big Pycodestyle Tests
-      - ./travis/pycodetyle/scan.sh
+    - figlet -c -w 125 -f big Bandit Tests
+    - "./travis/bandit/scan.sh"
+    - figlet -c -w 125 -f big Pur Tests
+    - "./travis/pur/scan.sh"
+    - figlet -c -w 125 -f big Pycodestyle Tests
+    - "./travis/pycodetyle/scan.sh"
   - language: python
-    name: "Bandit, Pur & Pycodestyle [Python 3.6 running on Ubuntu Bionic 18.04]"
+    name: Bandit, Pur & Pycodestyle [Python 3.6 running on Ubuntu Bionic 18.04]
     python: 3.6
     dist: bionic
     before_install:
-      - sudo apt-get install figlet
-      - mkdir travis
-      - git clone https://github.com/TravisToolbox/bandit-travis.git travis/bandit
-      - git clone https://github.com/TravisToolbox/pur-travis.git travis/pur
-      - git clone https://github.com/TravisToolbox/pycodestyle-travis.git travis/pycodetyle
-      - pip install --upgrade setuptools
+    - sudo apt-get install figlet
+    - mkdir travis
+    - git clone https://github.com/TravisToolbox/bandit-travis.git travis/bandit
+    - git clone https://github.com/TravisToolbox/pur-travis.git travis/pur
+    - git clone https://github.com/TravisToolbox/pycodestyle-travis.git travis/pycodetyle
+    - pip install --upgrade setuptools
     install:
-      - ./travis/bandit/install.sh
-      - ./travis/pur/install.sh
-      - ./travis/pycodetyle/install.sh
+    - "./travis/bandit/install.sh"
+    - "./travis/pur/install.sh"
+    - "./travis/pycodetyle/install.sh"
     script:
-      - figlet -c -w 125 -f big Bandit Tests
-      - ./travis/bandit/scan.sh
-      - figlet -c -w 125 -f big Pur Tests
-      - ./travis/pur/scan.sh
-      - figlet -c -w 125 -f big Pycodestyle Tests
-      - ./travis/pycodetyle/scan.sh
+    - figlet -c -w 125 -f big Bandit Tests
+    - "./travis/bandit/scan.sh"
+    - figlet -c -w 125 -f big Pur Tests
+    - "./travis/pur/scan.sh"
+    - figlet -c -w 125 -f big Pycodestyle Tests
+    - "./travis/pycodetyle/scan.sh"
   - language: python
-    name: "Bandit, Pur & Pycodestyle [Python 3.7 running on Ubuntu Bionic 18.04]"
+    name: Bandit, Pur & Pycodestyle [Python 3.7 running on Ubuntu Bionic 18.04]
     python: 3.7
     dist: bionic
     before_install:
-      - sudo apt-get install figlet
-      - mkdir travis
-      - git clone https://github.com/TravisToolbox/bandit-travis.git travis/bandit
-      - git clone https://github.com/TravisToolbox/pur-travis.git travis/pur
-      - git clone https://github.com/TravisToolbox/pycodestyle-travis.git travis/pycodetyle
-      - pip install --upgrade setuptools
+    - sudo apt-get install figlet
+    - mkdir travis
+    - git clone https://github.com/TravisToolbox/bandit-travis.git travis/bandit
+    - git clone https://github.com/TravisToolbox/pur-travis.git travis/pur
+    - git clone https://github.com/TravisToolbox/pycodestyle-travis.git travis/pycodetyle
+    - pip install --upgrade setuptools
     install:
-      - ./travis/bandit/install.sh
-      - ./travis/pur/install.sh
-      - ./travis/pycodetyle/install.sh
+    - "./travis/bandit/install.sh"
+    - "./travis/pur/install.sh"
+    - "./travis/pycodetyle/install.sh"
     script:
-      - figlet -c -w 125 -f big Bandit Tests
-      - ./travis/bandit/scan.sh
-      - figlet -c -w 125 -f big Pur Tests
-      - ./travis/pur/scan.sh
-      - figlet -c -w 125 -f big Pycodestyle Tests
-      - ./travis/pycodetyle/scan.sh
+    - figlet -c -w 125 -f big Bandit Tests
+    - "./travis/bandit/scan.sh"
+    - figlet -c -w 125 -f big Pur Tests
+    - "./travis/pur/scan.sh"
+    - figlet -c -w 125 -f big Pycodestyle Tests
+    - "./travis/pycodetyle/scan.sh"
   - language: python
-    name: "Bandit, Pur & Pycodestyle [Python 3.8 running on Ubuntu Bionic 18.04]"
+    name: Bandit, Pur & Pycodestyle [Python 3.8 running on Ubuntu Bionic 18.04]
     python: 3.8
     dist: bionic
     before_install:
-      - sudo apt-get install figlet
-      - mkdir travis
-      - git clone https://github.com/TravisToolbox/bandit-travis.git travis/bandit
-      - git clone https://github.com/TravisToolbox/pur-travis.git travis/pur
-      - git clone https://github.com/TravisToolbox/pycodestyle-travis.git travis/pycodetyle
-      - pip install --upgrade setuptools
+    - sudo apt-get install figlet
+    - mkdir travis
+    - git clone https://github.com/TravisToolbox/bandit-travis.git travis/bandit
+    - git clone https://github.com/TravisToolbox/pur-travis.git travis/pur
+    - git clone https://github.com/TravisToolbox/pycodestyle-travis.git travis/pycodetyle
+    - pip install --upgrade setuptools
     install:
-      - ./travis/bandit/install.sh
-      - ./travis/pur/install.sh
-      - ./travis/pycodetyle/install.sh
+    - "./travis/bandit/install.sh"
+    - "./travis/pur/install.sh"
+    - "./travis/pycodetyle/install.sh"
     script:
-      - figlet -c -w 125 -f big Bandit Tests
-      - ./travis/bandit/scan.sh
-      - figlet -c -w 125 -f big Pur Tests
-      - ./travis/pur/scan.sh
-      - figlet -c -w 125 -f big Pycodestyle Tests
-      - ./travis/pycodetyle/scan.sh
+    - figlet -c -w 125 -f big Bandit Tests
+    - "./travis/bandit/scan.sh"
+    - figlet -c -w 125 -f big Pur Tests
+    - "./travis/pur/scan.sh"
+    - figlet -c -w 125 -f big Pycodestyle Tests
+    - "./travis/pycodetyle/scan.sh"
   - language: ruby
-    name: "Link Checking (rvm 2.6)"
+    name: Link Checking (rvm 2.6)
     rvm: 2.6
     env: WHITELIST="https://github.com/TGWolf,https://github.com/AntiPhotonltd"
     before_install:
-      - mkdir travis
-      - git clone https://github.com/TravisToolbox/awesomebot-travis.git travis/awesomebot
+    - mkdir travis
+    - git clone https://github.com/TravisToolbox/awesomebot-travis.git travis/awesomebot
     install:
-      - ./travis/awesomebot/install.sh
-    script: 
-      - ./travis/awesomebot/scan.sh
+    - "./travis/awesomebot/install.sh"
+    script:
+    - "./travis/awesomebot/scan.sh"
 notifications:
   email: false
   slack:
-    secure: CwQSAe+0qAXpoSoITXKNu1370ZSYnag4/wF1iDTUYf0aiNVfWXEdEiKZAOEoq7CjoPwI8Ote8JLfT//zzBeYKQIRRN6IbsWajhQouc8HaQ1OEdesY1HuNL/1BIUxgt4s/QaztG2BRUMnLrxl0K2suirl2PegllsT0+Q4v4DLCaDasnnFsXiaRsitFVOhnD/sDAaFPkJjzVlqCEv/D5gHtF3NxcGBgAfJsKtIXqQ1t75ol0yjky7/XqsN0r8OvQItjqGBFuJJQSuSttu7WRMX6v+uo5HKb4UyM/HWMoyzGgJJLJYv20XIJB/8MWm2/7Q+4/D1XkM0v3yw3ObZrr8JD1xLHAvizagBYfBayJm8dIFeFqSFVZIgE5syAQPgqXm1IJtkiB/Or9amTgZnU4AzKz96eFutGy/16YasWOXXBPHjZHZFFMRzbXmv9iRtYEUN0UXrZp0QB1B7vUSDeNoe/r/eVpnWYsh7Cw527otZKMw8k09RrD+2uirWUKYwRnfjl9oW3iqsDuy4zRH5jmEpIsqtS+zPEQRIulGaf/To193Z6QJS5DykLwCZ+yY+worc14mozODr/e6lX8Bwr4Ax8T5tb+8QBXZuRDOKCqvOa/rnCI9zjnausjiqjxQBd2nFtZFB8wnXZsU4tFbbRmZrkYmaOOX1/5jTJG9Je+J5wmA=
+    secure: TU2f53qhqvRrLYRf0Oh7dM6phT4+ncCw1WQd4k5X3zIV0TU9nN3zq4oNKrzfUqBgHK+Oist3Za4dk2OJPQrqEE7lP264/xZ1LM5C7i/TyPL33zqgTY7hJTJe/d0vJmt+eSi97hc4BQPpNQ4QiG7BGwOPYqAdnWv4WHe7/CrFlGjVjOjoz2M8LgOF6Up4HHMIa3bABcPwhkTAHXzvwNtt4VgAp2Lu8c7L1d8woiiNNDyoIUgq5QFm+sEQKkttkdFGW+voaZSZQ/y4EnAoFWHy2oFgsi59ZxABxNyHrd2amOdDW9rGQCcG1jkNLbSwtLxGNlCQTXSRFPPaNCL5QxFplzWbj4WDjU4a5ZLLwDJf9Zm1XcATydOLGYnbZg9twIwy+5B2STS0daM+VTDkHqQMc+LSG+50FfV/bgP4mj0KhqnfuirqlwRLqZH6YM+UBFD/8CmfUcKqQrBZ0N/fV79HGL+H4514ZtkyxvwJvM4aW/G6YeaP8bAlbp8qqkI0GGHGwISz87bkjLI/TLr+fzuAnFGmfHTYgHLO2uxL2qfunWZWDk8skkmvTRTwQHObPA5ETnZvGqwyPuf4glJm8H1gTScps332TlfPVWcJsEW09N/VmsyFMuX8sk3zu0XNJPEislMYseUXYE+HXNKrUU9eVwn1DdprMHz5dWhFRTE5lt0=
